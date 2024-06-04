@@ -62,7 +62,7 @@ const PlaceOrder = () => {
     return (
         <form onSubmit={placeOrder} className='place-order'>
             <div className="place-order-left">
-                <p className="title">Deliveri Information</p>
+                <p className="title">Delivery Information</p>
                 <div className="multi-fields">
                     <input required name='firstName' onChange={onChangeHandler} value={data.firstName} type="text" placeholder='First name' />
                     <input required name='lastName' onChange={onChangeHandler} value={data.lastName} type="text" placeholder='Last Name' />
@@ -98,7 +98,7 @@ const PlaceOrder = () => {
                             <p>${getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 2}</p>
                         </div>
                     </div>
-                    <button type='submit'>PROCEED TO pAYMENT</button>
+                    <button type='submit'>PROCEED TO PAYMENT</button>
                 </div>
             </div>
         </form>
